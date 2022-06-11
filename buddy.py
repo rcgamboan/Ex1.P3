@@ -1,4 +1,7 @@
 
+#Pregunta 3 Parcial 1 CI3641
+#Elaborado por Roberto Gamboa 16-10394
+
 # Implementacion de la tecnica de alocacion de memoria Buddy System
 # Implementacion basada en la hallada en
 # https://www.geeksforgeeks.org/buddy-memory-allocation-program-set-1-allocation/ y en
@@ -186,28 +189,26 @@ class Buddy(object):
     # Muestra visualmente el estado de los bloques, los que se encuentran libres y los que se encuentran reservados
     def imprimir(self):
         
-        string_libres = ''
+        string_libres = ""
         print("\nBloques libres: ")
         for nivel in self.bloquesLibres:
             for bloque in nivel:
-                string_libres += str(bloque)
-                string_libres += '\n'
+                string_libres += str(bloque) + "\n"
         if len(string_libres) == 0:
             print("No hay bloques libres")
         else:
             print(string_libres)
         
         print("\nBloques reservados: ")
-        string_en_uso = ''
+        string_en_uso = ""
         for nombre in list(self.bloquesEnUso.keys()):
             bloque = self.bloquesEnUso[nombre]
-            string_en_uso += str(bloque) + ", Usuario : " + nombre
-            string_en_uso += '\n'
+            string_en_uso += str(bloque) + ", Usuario : " + nombre + "\n"
         if len(string_en_uso) == 0:
-            print("No hay bloques reservados en este momento")
+            print("No hay bloques reservados en este momento\n")
         else:
-            print(string_en_uso)
-        print("\n")
+            print(string_en_uso + "\n")
+
         return
 
 

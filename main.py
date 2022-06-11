@@ -1,5 +1,8 @@
+#Pregunta 3 Parcial 1 CI3641
+#Elaborado por Roberto Gamboa 16-10394
 
 # Archivo principal de la implementacion del Buddy System
+# Se implementa un cliente para poder interactuar con el programa
 # Se reciben los comandos del usuario desde la terminal
 # Y se llaman a las funciones de la classe Buddy segun se requiera
 

@@ -1,3 +1,5 @@
+#Pregunta 3 Parcial 1 CI3641
+#Elaborado por Roberto Gamboa 16-10394
 
 import unittest
 from buddy import Buddy
@@ -17,13 +19,14 @@ buddy = Buddy(500)
 class TestBuddy(unittest.TestCase):
 
     def test_asignar_0(self):
+        buddy.imprimir()
         self.assertEqual(buddy.reservar('p0',0) , '\nNo se ha solicitado memoria')
-
+    
     def test_asignar_menor(self):
         self.assertEqual(buddy.reservar('p1',5) , "Se le ha asignado el bloque [Inicio : 0, Fin : 7] al usuario p1")
 
     def test_asignar_mayor(self):
-        self.assertEqual(buddy.reservar('p2',40) , "\nNo hay espacio suficiente que asignar")
+        self.assertEqual(buddy.reservar('p2',400) , "\nNo hay espacio suficiente que asignar")
     
     def test_reasignar(self):
         self.assertEqual(buddy.reservar('p1',20) , "\nEl usuario p1 ya tiene espacio asignado.")
