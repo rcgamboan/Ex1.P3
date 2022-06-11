@@ -6,7 +6,7 @@
 # Implementacion basada en la hallada en
 # https://www.geeksforgeeks.org/buddy-memory-allocation-program-set-1-allocation/ y en
 # https://www.geeksforgeeks.org/buddy-memory-allocation-program-set-2-deallocation/
-# Realizada por Roberto Gamboa, 16-10394
+
 # Se trata de una tecnica que maneja la memoria dividiendo sus bloques en potencias de 2
 # Y cuando se libera un bloque, se combina con otro bloque adyacente (si esta libre)
 # para crear bloques de mayor capacidad

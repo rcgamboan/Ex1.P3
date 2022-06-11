@@ -22,7 +22,7 @@ except:
     sys.exit()
 
 print("\n\nCliente que maneja la implementacion del Buddy System")
-print("Implementado por Roberto Gamboa, 16-10394")
+
 
 buddy = Buddy(numero_bloques)
 
